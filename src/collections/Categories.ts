@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
-import { isAdminOrEditor } from '../access'
-import { slugify } from '../utils/slugify'
+import { isAdminOrEditor } from '../access/index.ts'
+import { slugify } from '../utils/slugify.ts'
 
 export const Categories: CollectionConfig = {
   slug: 'categories',

@@ -4,8 +4,8 @@ import {
   isAdmin,
   isAdminOrEditorOrSelf,
   publishedOrAuthenticated,
-} from '../access'
-import { slugify } from '../utils/slugify'
+} from '../access/index.ts'
+import { slugify } from '../utils/slugify.ts'
 
 export const Actualites: CollectionConfig = {
   slug: 'actualites',

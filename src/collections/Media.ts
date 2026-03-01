@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { isAuthenticated } from '../access'
+import { isAuthenticated } from '../access/index.ts'
 
 
 export const Media: CollectionConfig = {

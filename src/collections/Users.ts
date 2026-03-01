@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { isAdmin, isAuthenticated, isAdminOrEditor, adminFieldAccess } from '../access'
+import { isAdmin, isAuthenticated, isAdminOrEditor, adminFieldAccess } from '../access/index.ts'
 
 
 export const Users: CollectionConfig = {
