@@ -1,0 +1,867 @@
+{
+  "layout": {
+    "header": {
+      "topText": "🕊️ Ambassade du Burkina Faso en Inde - Service de nos concitoyens depuis 1970",
+      "langFr": "Français",
+      "langEn": "English",
+      "embassyName": "Ambassade du Burkina Faso",
+      "subtitle": "New Delhi, République de l'Inde",
+      "altText": "Armoiries du Burkina Faso",
+      "home": "Accueil",
+      "consularServices": "Services Consulaires",
+      "bilateralCooperation": "Coopérations bilatérales",
+      "news": "Actualités",
+      "aboutUs": "À propos",
+      "burkinaFaso": "Burkina Faso",
+      "indiaBurkinaCooperation": "Coopération Inde-Burkina",
+      "bilateralRelations": "Relations Bilatérales",
+      "theEmbassy": "L'Ambassade",
+      "theAmbassador": "L'Ambassadeur",
+      "theConsularNetwork": "Le réseau consulaire",
+      "embassyStaff": "Personnel de l'Ambassade",
+      "governmentOfBurkinaFaso": "Gouvernement du Burkina Faso",
+      "investments": "Investissements",
+      "tourism": "Tourisme",
+      "eVisa": "E-visas",
+      "emergencyContact": "Contact Urgent",
+      "bookAppointment": "Prendre Rendez-vous",
+      "usefulLinks": "Liens Utiles",
+      "contact": "Contact",
+      "standardHours": "Standard",
+      "emergencyLine": "Urgence",
+      "address": "New Delhi, Inde",
+      "follow": "Suivez-nous"
+    },
+    "footer": {
+      "EBI": "Ambassade du Burkina Faso en Inde",
+      "altText": "Armoiries du Burkina Faso",
+      "location": "New Delhi, République de l'Inde",
+      "description": "Représentation diplomatique du Burkina Faso en Inde, œuvrant pour le renforcement des relations bilatérales et la protection des intérêts des citoyens burkinabè.",
+      "followUs": "Suivez‑nous",
+      "LU": "Liens utiles",
+      "S": "Services",
+      "NC": "Contact & Newsletter",
+      "PF": "Présidence du Faso",
+      "P": "Gouvernement",
+      "MAE": "Ministère des Affaires Étrangères",
+      "ALT": "Assemblée Nationale",
+      "ONTB": "Office National des Titres de Séjour et de l'Immigration",
+      "LV": "Heures d'ouverture",
+      "NF": "Lundi au Vendredi, 9h00 – 17h00",
+      "SD": "Services consulaires",
+      "F": "Lundi au Vendredi, 9h00 – 12h00",
+      "JfIBF": "Légalisation de documents",
+      "newsletterTitle": "Bulletin d'information",
+      "emailPlaceholder": "Votre adresse email",
+      "subscribe": "S'abonner",
+      "emergencyTitle": "Service d'urgence 24/7",
+      "emergencySubtitle": "Assistance immédiate pour les citoyens burkinabè",
+      "callNow": "Appeler maintenant",
+      "copyright": "© 2025 Ambassade du Burkina Faso en Inde, New Delhi, Inde. Tous droits réservés.",
+      "diplomaticSince": "Représentation diplomatique accréditée depuis 1970",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "cookies": "Cookies",
+      "accessibility": "Accessibilité",
+      "sitemap": "Plan du site",
+      "addressLine1": "F-2/4, Vasant Vihar",
+      "addressLine2": "New Delhi, Inde",
+      "phoneStandard": "+91-11-2614 0630",
+      "phoneLabelStandard": "Standard",
+      "phoneEmergency": "+91 98 111 44440",
+      "phoneLabelUrgence": "Urgence",
+      "emailAddress": "ambassadeburkinafasoindia@gmail.com",
+      "emailLabelMain": "Email principal"
+    },
+    "social": {
+      "Facebook": "Facebook",
+      "Twitter": "Twitter",
+      "Instagram": "Instagram",
+      "LinkedIn": "LinkedIn"
+    }
+  },
+  "Homepage": {
+    "Messagedelambassadeur": {
+      "title": "Message de l'Ambassadeur",
+      "alt": "Ambassadeur du Burkina Faso",
+      "text1": "Chers visiteurs, bienvenue sur le site officiel de l'Ambassade du Burkina Faso à New Delhi. Nous nous engageons à renforcer les liens entre nos nations et à offrir un soutien dévoué à nos concitoyens à l'étranger.",
+      "text2": "Notre mission est de favoriser la coopération diplomatique, économique et culturelle entre le Burkina Faso et l'Inde. Nous œuvrons sans relâche pour protéger les intérêts des citoyens burkinabè tout en promouvant l'entente mutuelle et la collaboration.",
+      "text3": "En ces temps difficiles, notre ambassade reste pleinement opérationnelle pour assister les nationaux et faciliter les partenariats internationaux. Nous vous encourageons à découvrir nos services et à rester informés via nos canaux officiels.",
+      "text4": "Ensemble, nous construisons un avenir plus solide fondé sur la solidarité, le respect et la prospérité partagée.",
+      "signature": {
+        "name": "S.E. Dr SOME Désiré Boniface",
+        "title": "Ambassadeur du Burkina Faso"
+      }
+    },
+    "ContactSection": {
+  "badge": "Nous Contacter",
+  "title": "Contactez-nous",
+  "subtitle": "Vous avez une question, besoin d'une assistance consulaire ou souhaitez prendre rendez-vous ? Nous sommes là pour vous aider.",
+
+  "info": {
+    "phone": { "title": "Téléphone" },
+    "email": { "title": "Courriel" },
+    "address": { "title": "Adresse" },
+    "hours": {
+      "title": "Heures d'Ouverture",
+      "weekdays": "Lun – Ven",
+      "weekend": "Sam – Dim"
+    }
+  },
+
+  "form": {
+    "heading": "Envoyez-nous un Message",
+    "description": "Remplissez le formulaire ci-dessous et notre équipe vous répondra dans un délai de 2 jours ouvrables. Les champs marqués d'un * sont obligatoires.",
+    "labels": {
+      "full_name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Objet",
+      "message": "Message"
+    },
+    "placeholders": {
+      "full_name": "Entrez votre nom complet",
+      "email": "votre.email@exemple.com",
+      "subject": "Sélectionnez un objet",
+      "message": "Veuillez décrire votre demande en détail..."
+    },
+    "subjects": {
+      "visa": "Services de Visa",
+      "passport": "Services de Passeport",
+      "consular": "Immatriculation Consulaire",
+      "trade": "Commerce et Investissement",
+      "appointment": "Prendre Rendez-vous",
+      "other": "Autre / Demande Générale"
+    },
+    "hints": {
+      "message_min": "Minimum 10 caractères"
+    },
+    "button": {
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours..."
+    },
+    "errors": {
+      "name_required": "Veuillez entrer votre nom complet (au moins 2 caractères)",
+      "email_invalid": "Veuillez entrer une adresse email valide",
+      "subject_required": "Veuillez sélectionner un objet",
+      "message_min": "Veuillez entrer un message (au moins 10 caractères)",
+      "submission_failed": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par téléphone."
+    },
+    "alerts": {
+      "success_title": "Message Envoyé avec Succès !",
+      "success_message": "Merci de nous avoir contactés. Notre équipe examinera votre message et vous répondra dans un délai de 2 jours ouvrables.",
+      "error_title": "Échec de l'Envoi"
+    }
+  },
+
+  "map": {
+    "title": "Emplacement de l'Ambassade du Burkina Faso à New Delhi sur Google Maps",
+    "aria_label": "Carte interactive montrant l'Ambassade du Burkina Faso à New Delhi"
+  },
+
+  "response": {
+    "title": "Délai de Réponse Prévu",
+    "text": "Nous répondons généralement aux demandes dans un délai de 2 jours ouvrables. Pour les questions urgentes de visa ou de passeport, veuillez vous rendre à l'Ambassade en personne pendant les heures d'ouverture."
+  },
+
+  "emergency": {
+    "title": "Assistance d'Urgence",
+    "text": "Pour les urgences impliquant des ressortissants burkinabè (arrestation, accident, urgence médicale, décès), veuillez appeler l'Ambassade directement."
+  }
+},
+    "PatrioticSupport":{
+  "badge": "Mobilisation Nationale",
+  "title": "Soutien Patriotique",
+  "subtitle": "Contribuez à l'effort national pour la paix, la sécurité et la souveraineté. Chaque acte de solidarité renforce notre nation.",
+
+  "image_alt": "Citoyens du Burkina Faso manifestant leur solidarité patriotique et leur soutien à l'effort national",
+  "image_caption": "Ensemble pour un Burkina Faso souverain et résilient",
+
+  "callout": {
+    "title": "Votre Contribution Compte",
+    "text": "Chaque contribution, aussi modeste soit-elle, aide à soutenir nos forces de défense et de sécurité dans leur mission de protection de la nation et de son peuple."
+  },
+
+  "docs_heading": "Documents et Ressources",
+
+  "docs": {
+    "rib": {
+      "title": "Coordonnées Bancaires — Fonds de l'Effort de Guerre",
+      "desc": "Relevé d'identité bancaire (RIB) officiel pour effectuer des contributions financières au fonds national de l'effort de guerre."
+    },
+    "voluntary": {
+      "title": "Formulaire de Cession Volontaire",
+      "desc": "Téléchargez le formulaire officiel pour formaliser votre contribution financière ou matérielle volontaire."
+    },
+    "portal": {
+      "title": "Portail National de Mobilisation",
+      "desc": "Visitez le portail officiel du gouvernement pour la mobilisation, les mises à jour et les autres moyens de contribuer."
+    }
+  },
+
+  "meta": {
+    "external": "Site Externe"
+  },
+
+  "aria": {
+    "download_pdf": "Télécharger le document PDF",
+    "opens_new_tab": "S'ouvre dans un nouvel onglet"
+  },
+
+  "help_text": "Les documents sont fournis par des sources gouvernementales officielles. Le lien externe dirige vers le portail national de mobilisation géré par le Gouvernement du Burkina Faso."
+},
+    "ContactForm": {
+      "title": "Envoyez-nous un message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "Votre email",
+      "subjectPlaceholder": "Sujet",
+      "messagePlaceholder": "Votre message...",
+      "submitButton": "Envoyer le message",
+      "successMessage": "Message envoyé avec succès !",
+      "errorMessage": "Erreur lors de l'envoi. Réessayez."
+    },
+    "Hero":{
+  "badge": "Ambassade Officielle",
+  "title": "Ambassade du Burkina Faso en Inde",
+  "subtitle": "Au service des ressortissants burkinabè et des relations bilatérales entre le Burkina Faso et l'Inde, l'Indonésie, la Thaïlande et le Népal.",
+
+  "india_city": "New Delhi",
+  "india_country": "Inde",
+  "india_flag_alt": "Drapeau de l'Inde",
+  "bf_city": "Ouagadougou",
+  "bf_country": "Burkina Faso",
+  "bf_flag_alt": "Drapeau du Burkina Faso",
+  "local_time": "Heure Locale",
+
+  "carousel": {
+    "label": "Galerie photo de l'Ambassade",
+    "slide": "Diapositive",
+    "dots_label": "Navigation de la galerie",
+    "prev": "Image précédente",
+    "next": "Image suivante",
+    "pause": "Mettre en pause le diaporama",
+    "play": "Reprendre le diaporama",
+    "caption": "La vie à l'Ambassade"
+  },
+
+  "gallery": {
+    "alt_1": "Vue extérieure du bâtiment de l'Ambassade",
+    "alt_2": "Réception diplomatique à l'Ambassade",
+    "alt_3": "Rencontre de l'Ambassadeur avec des officiels indiens",
+    "alt_4": "Événement culturel célébrant le patrimoine du Burkina Faso",
+    "alt_5": "Personnel de l'Ambassade lors des célébrations de la Fête de l'Indépendance",
+    "alt_6": "Cérémonie de signature de coopération bilatérale",
+    "alt_7": "Espace des services consulaires de l'Ambassade",
+    "alt_8": "Rassemblement communautaire à l'Ambassade",
+    "alt_9": "Réception de la Fête nationale",
+    "alt_10": "Jardin et terrains de l'Ambassade",
+    "alt_12": "Cérémonie diplomatique officielle",
+    "alt_15": "Événement du programme d'échange culturel",
+    "alt_16": "Journée portes ouvertes de l'Ambassade",
+    "alt_17": "Réunion du corps diplomatique",
+    "alt_18": "Événement de la communauté burkinabè à New Delhi",
+    "alt_19": "Visite d'une délégation commerciale",
+    "alt_20": "Programme éducatif à l'Ambassade",
+    "alt_21": "Cérémonie de lever du drapeau",
+    "alt_22": "Photo d'équipe de l'Ambassade",
+    "alt_23": "Événement de proximité consulaire",
+    "alt_24": "Célébration de l'amitié bilatérale",
+    "alt_25": "Vue d'ensemble des locaux de l'Ambassade"
+  }
+}
+  },
+  "Consular": {
+  "title": "Services Consulaires",
+  "subtitle": "Informations complètes sur les services consulaires fournis par l'Ambassade du Burkina Faso en Inde.",
+  "badge": "Services de l'Ambassade",
+  "services_label": "Services consulaires disponibles",
+  "footer_text": "Ambassade du Burkina Faso en Inde",
+
+  "passport": {
+    "header": "Services de Passeport",
+    "download_title": "Télécharger le Formulaire de Demande",
+    "download_button": "Télécharger le Formulaire de Passeport",
+    "form_alt": "Aperçu du formulaire de demande de passeport",
+    "loss_title": "Perte ou Vol de Passeport",
+    "loss_text": "En cas de perte ou de vol de votre passeport, vous devez immédiatement déposer une déclaration auprès de la police locale, puis contacter l'Ambassade avec le procès-verbal de police afin d'entamer la procédure de remplacement.",
+    "general": {
+      "title": "Conditions Générales",
+      "docs": [
+        "Formulaire de demande de passeport dûment rempli avec les empreintes biométriques",
+        "1 Extrait d'acte de naissance ou un jugement supplétif",
+        "1 Certificat de nationalité burkinabè ou une copie légalisée de celui-ci",
+        "1 Copie légalisée de la carte d'identité burkinabè ou de la carte consulaire",
+        "1 Extrait de casier judiciaire datant de moins de trois (3) mois",
+        "3 Photos d'identité prises de face sur fond blanc, format 4,5 × 3,5 cm",
+        "1 Attestation de la profession ou copie légalisée"
+      ]
+    },
+    "marriage": {
+      "title": "Demandeurs Mariés",
+      "docs": [
+        "Formulaire de demande dûment rempli avec empreintes",
+        "1 Extrait d'acte de naissance",
+        "1 Certificat de nationalité burkinabè",
+        "1 Copie légalisée de la carte d'identité consulaire",
+        "1 Extrait de casier judiciaire (moins de 3 mois)",
+        "1 Copie légalisée du document d'identité du conjoint",
+        "1 Copie légalisée de l'acte de mariage",
+        "3 Photos d'identité",
+        "1 Attestation de profession"
+      ]
+    },
+    "minor": {
+      "title": "Demandeurs Mineurs",
+      "docs": [
+        "Formulaire de demande dûment rempli (sans les empreintes)",
+        "3 Photos d'identité",
+        "1 Extrait d'acte de naissance",
+        "1 Certificat de nationalité",
+        "Une autorisation parentale",
+        "Un certificat de scolarité ou attestation d'inscription",
+        "Copie des documents d'identité des deux parents"
+      ]
+    },
+    "renewal": {
+      "title": "Renouvellement de Passeport",
+      "docs": [
+        "Formulaire de demande dûment rempli avec empreintes",
+        "Nouveau dossier requis pour les passeports délivrés avant 1991",
+        "Copie du passeport expiré",
+        "Document justifiant la profession",
+        "Trois (03) photos format passeport",
+        "Certificat de nationalité burkinabè",
+        "Copie légalisée de la CNIB"
+      ]
+    }
+  },
+
+  "consular_card": {
+    "header": "Carte Consulaire",
+    "desc1": "La carte consulaire est un document d'identité délivré par l'Ambassade aux ressortissants burkinabè résidant dans la juridiction de l'Ambassade.",
+    "desc2": "Elle est valable 5 ans et doit être renouvelée à son expiration. Elle est requise pour la plupart des démarches consulaires.",
+    "docs_title": "Documents Requis",
+    "docs": [
+      "Photocopie du certificat de nationalité, de la CNIB ou du passeport",
+      "Photocopie de l'acte de naissance",
+      "Copie du visa d'entrée",
+      "Deux (02) photos d'identité identiques"
+    ],
+    "form_alt": "Aperçu du formulaire de demande de carte consulaire",
+    "registration_form_alt": "Aperçu de la fiche d'immatriculation",
+    "download_card_form": "Formulaire de Carte Consulaire",
+    "download_registration_form": "Fiche d'Immatriculation"
+  },
+
+  "visa": {
+    "header": "Services de Visa",
+    "required_docs": "Documents Requis par Catégorie",
+    "cat_diplomatic": "Visa Diplomatique",
+    "cat_business": "Visa d'Affaires",
+    "cat_conference": "Visa de Conférence",
+    "cat_tourism": "Visa de Tourisme",
+    "diplomatic_docs": [
+      "Formulaire original × 2",
+      "Note verbale",
+      "2 Photos d'identité",
+      "Certificat de vaccination contre la fièvre jaune"
+    ],
+    "business_docs": [
+      "Formulaire × 2",
+      "Réservation d'hôtel",
+      "2 Photos d'identité",
+      "Billet d'avion",
+      "Lettre d'invitation",
+      "Lettre de l'entreprise",
+      "Profil de la société",
+      "Attestation de la chambre de commerce",
+      "Copie du passeport",
+      "Certificat de vaccination contre la fièvre jaune"
+    ],
+    "conference_docs": [
+      "Formulaire × 2",
+      "Invitation à la conférence",
+      "Copie du passeport",
+      "Billet d'avion",
+      "2 Photos d'identité",
+      "Certificat de vaccination contre la fièvre jaune"
+    ],
+    "tourism_docs": [
+      "Formulaire × 2",
+      "Réservation d'hôtel",
+      "Copie du passeport",
+      "2 Photos d'identité",
+      "Billet d'avion",
+      "Certificat de vaccination contre la fièvre jaune",
+      "Preuve de capacité financière"
+    ],
+    "fees_title": "Frais de Visa",
+    "fees_caption_business": "Grille tarifaire des visas d'affaires",
+    "fees_header_duration": "Durée",
+    "fees_header_fee": "Tarif",
+    "label_business": "Frais de Visa d'Affaires",
+    "label_other": "Autres Catégories de Visa",
+    "price_other": "5 625 ₹",
+    "fee_note": "Les frais sont susceptibles de modification. Veuillez contacter l'Ambassade pour obtenir la grille tarifaire la plus récente.",
+    "fees": {
+      "3m_single": "3 mois — entrée unique",
+      "3m_multi": "3 mois — entrées multiples",
+      "6m_single": "6 mois — entrée unique",
+      "6m_multi": "6 mois — entrées multiples",
+      "12m_single": "12 mois — entrée unique",
+      "12m_multi": "12 mois — entrées multiples"
+    },
+    "form_notice": "Formulaire de Demande de Visa",
+    "form_description": "Téléchargez le formulaire officiel de demande de visa ci-dessous.",
+    "form_alt": "Aperçu du formulaire de demande de visa",
+    "download_button": "Télécharger le Formulaire de Visa"
+  },
+
+  "miscellaneous": {
+    "header": "Autres Documents",
+    "desc1": "L'Ambassade peut également délivrer divers autres documents administratifs aux ressortissants burkinabè ou aux ressortissants étrangers relevant de sa juridiction.",
+    "desc2": "Veuillez contacter l'Ambassade pour connaître les conditions et les frais spécifiques aux documents énumérés ci-dessous.",
+    "documents": [
+      "Laissez-passer",
+      "Certificat de Capacité Matrimoniale",
+      "Certificat de Célibat"
+    ]
+  }
+},
+  "News": {
+    "title": "Les dernières actualités",
+    "tabs": {
+      "embassy": "Dernières actualités de l'ambassade",
+      "government": "Annonces gouvernementales"
+    },
+    "view_all": "Voir toutes les actualités",
+    "social_follow": "Suivez-nous sur les réseaux sociaux pour plus d'actualités",
+    "iframe_title": "Annonce gouvernementale",
+    "categories": {
+      "diplomacy": "Diplomatie",
+      "relations": "Relations Internationales",
+      "economy": "Économie",
+      "politics": "Politique"
+    },
+    "items": {
+      "news1": "Université d'été des jeunes de l'AES : le Président du Faso invite la jeunesse à faire échec à la manipulation",
+      "news2": "Nonciature apostolique du Ghana : Monseigneur Julien KABORE traduit sa reconnaissance au Président du Faso",
+      "news3": "Développement du Burkina Faso : les entrepreneurs de la diaspora réaffirment leur soutien au Chef de l'État",
+      "news4": "Secteur de l'assurance : le gouvernement décide de la création d'une société de réassurance"
+    }
+  },
+  "BurkinaPage": {
+  "hero": {
+    "country_name": "Burkina Faso",
+    "typewriter": [
+      "Le Pays des Hommes Intègres",
+      "Une Nation de Courage et de Dignité",
+      "Au Cœur de l'Afrique de l'Ouest",
+      "Une Culture Riche, un Peuple Résilient",
+      "Unité — Progrès — Justice"
+    ],
+    "intro": "Le Burkina Faso, officiellement l'État de Transition du Burkina Faso, est un pays enclavé d'Afrique de l'Ouest. Il couvre une superficie d'environ 274 200 km² et est bordé par le Mali, le Niger, le Bénin, le Togo, le Ghana et la Côte d'Ivoire."
+  },
+
+  "national_info": {
+    "section_title": "Informations Nationales",
+    "section_desc": "Faits et chiffres clés sur le Burkina Faso — sa gouvernance, sa géographie, sa culture et son peuple.",
+    "bilateral_title": "Relations Bilatérales Burkina Faso – Inde",
+    "bilateral_text": "Le Burkina Faso et l'Inde entretiennent des relations bilatérales chaleureuses et amicales, fondées sur des valeurs partagées de coopération Sud-Sud. L'Inde a été un partenaire indéfectible dans le développement du Burkina Faso à travers l'assistance technique, le renforcement des capacités et les lignes de crédit. Les deux nations continuent de renforcer leurs liens dans les domaines du commerce, de l'éducation, de la santé et des échanges culturels."
+  },
+
+  "cards": {
+    "capital": {
+      "title": "Capitale",
+      "value": "Ouagadougou"
+    },
+    "population": {
+      "title": "Population",
+      "value": "Environ 22,5 millions d'habitants (estimation 2024)"
+    },
+    "languages": {
+      "title": "Langues Officielles",
+      "value": "Français (officiel), mooré, dioula, fulfuldé, et plus de 60 langues nationales"
+    },
+    "calling_code": {
+      "title": "Indicatif Téléphonique",
+      "value": "+226"
+    },
+    "climate": {
+      "title": "Climat",
+      "value": "Tropical avec deux saisons : pluvieuse (juin–octobre) et sèche (novembre–mai)"
+    },
+    "flag": {
+      "title": "Drapeau National",
+      "value": "Deux bandes horizontales — rouge (haut) et verte (bas) — avec une étoile dorée à cinq branches au centre"
+    },
+    "timezone": {
+      "title": "Fuseau Horaire",
+      "value": "GMT / UTC+0 (pas d'heure d'été)"
+    },
+    "currency": {
+      "title": "Monnaie",
+      "value": "Franc CFA ouest-africain (XOF)"
+    },
+    "president": {
+      "title": "Chef de l'État",
+      "value": "Capitaine Ibrahim Traoré, Président de la Transition"
+    },
+    "prime_minister": {
+      "title": "Premier Ministre",
+      "value": "Me Apollinaire Joachimson Kyélem de Tambèla"
+    }
+  }
+},
+  "Cooperation":{
+  "hero": {
+    "title": "Coopération entre l'Inde et le Burkina Faso",
+    "subtitle": "Un partenariat fondé sur des valeurs communes, le respect mutuel et une vision partagée du développement durable.",
+    "stats_label": "Statistiques clés de la coopération"
+  },
+
+  "stats": {
+    "trade": { "value": "5,2 Mrd ₹", "label": "Commerce bilatéral" },
+    "agreements": { "value": "42", "label": "Accords signés" },
+    "companies": { "value": "150+", "label": "Entreprises indiennes" },
+    "projects": { "value": "75", "label": "Projets conjoints" },
+    "scholars": { "value": "200+", "label": "Boursiers échangés" },
+    "events": { "value": "12", "label": "Événements culturels" }
+  },
+
+  "intro": {
+    "title": "Un Partenariat Ancré dans des Valeurs Partagées",
+    "p1": "La relation bilatérale entre l'Inde et le Burkina Faso repose sur les principes de la coopération Sud-Sud, du respect mutuel et de la solidarité. Depuis l'établissement des relations diplomatiques, les deux nations ont tissé des liens profonds dans de multiples secteurs.",
+    "p2": "L'Inde a été un partenaire indéfectible dans le parcours de développement du Burkina Faso, apportant une assistance technique, un renforcement des capacités et des lignes de crédit qui ont contribué aux infrastructures, à l'agriculture, à la santé et à l'éducation au Burkina Faso.",
+    "image_alt": "Rencontre diplomatique entre les représentants de l'Inde et du Burkina Faso",
+    "partnership_label": "Partenariat Stratégique"
+  },
+
+  "tabs": {
+    "label": "Catégories de coopération",
+    "economic": "Coopération Économique",
+    "cultural": "Échanges Culturels",
+    "academic": "Académique et Recherche",
+    "social": "Développement Social"
+  },
+
+  "achievements_label": "Réalisations Clés",
+  "no_data": "Le contenu de cette section est en cours de mise à jour.",
+
+  "economic": {
+    "trade": {
+      "title": "Accords Commerciaux et Investissements",
+      "description": "Renforcement des relations commerciales bilatérales à travers la facilitation des échanges, la promotion des investissements et l'harmonisation douanière.",
+      "achievements": [
+        "Accord bilatéral de promotion et de protection des investissements",
+        "Cadre de coopération douanière et de facilitation des échanges",
+        "Forum d'affaires annuel Inde-Burkina Faso",
+        "Soutien au développement des PME et à l'accès aux marchés"
+      ],
+      "stat": "5,2 Mrd ₹",
+      "stat_label": "Volume annuel du commerce bilatéral"
+    },
+    "infrastructure": {
+      "title": "Développement des Infrastructures",
+      "description": "Développement conjoint de projets d'infrastructures stratégiques dans les domaines de l'énergie, des transports et des télécommunications.",
+      "achievements": [
+        "Électrification rurale par l'énergie solaire",
+        "Programmes de construction et de réhabilitation routière",
+        "Extension du réseau de télécommunications",
+        "Projets d'approvisionnement en eau et d'assainissement"
+      ],
+      "stat": "15+",
+      "stat_label": "Grands projets d'infrastructure"
+    },
+    "agriculture": {
+      "title": "Coopération Agricole",
+      "description": "Transfert de technologies et d'expertise agricoles pour renforcer la sécurité alimentaire et les moyens de subsistance ruraux.",
+      "achievements": [
+        "Transfert de technologie d'irrigation goutte à goutte",
+        "Collaboration en recherche agricole",
+        "Programmes de développement de variétés de semences",
+        "Soutien à la mécanisation agricole"
+      ],
+      "stat": "30 000+",
+      "stat_label": "Agriculteurs bénéficiaires"
+    }
+  },
+
+  "cultural": {
+    "arts": {
+      "title": "Échanges Artistiques et Scéniques",
+      "description": "Renforcement des liens interpersonnels à travers des festivals culturels, des collaborations artistiques et des événements culturels diplomatiques.",
+      "achievements": [
+        "Délégation indienne au festival FESPACO",
+        "Spectacles conjoints de danse et de musique",
+        "Programme d'échange de résidences d'artistes",
+        "Semaines culturelles dans les missions diplomatiques"
+      ],
+      "stat": "12",
+      "stat_label": "Événements culturels par an"
+    },
+    "heritage": {
+      "title": "Patrimoine et Tradition",
+      "description": "Célébration et préservation du riche patrimoine culturel des deux nations à travers des initiatives conjointes.",
+      "achievements": [
+        "Expositions d'échange d'artefacts de musées",
+        "Ateliers de préservation de l'artisanat traditionnel",
+        "Coopération sur les sites du patrimoine UNESCO",
+        "Coproductions documentaires"
+      ],
+      "stat": "8",
+      "stat_label": "Initiatives patrimoniales conjointes"
+    }
+  },
+
+  "academic": {
+    "scholarships": {
+      "title": "Programmes de Bourses",
+      "description": "Offre d'opportunités éducatives aux étudiants burkinabè à travers les programmes de bourses du gouvernement indien.",
+      "achievements": [
+        "Allocations de bourses ICCR",
+        "Programme de formation professionnelle ITEC",
+        "Soutien aux bourses de doctorat",
+        "Formations professionnelles de courte durée"
+      ],
+      "stat": "200+",
+      "stat_label": "Boursiers depuis 2010"
+    },
+    "research": {
+      "title": "Collaboration en Recherche",
+      "description": "Initiatives de recherche conjointes dans les domaines de l'agriculture, des sciences de la santé et des énergies renouvelables.",
+      "achievements": [
+        "Recherche en biotechnologie agricole",
+        "Études épidémiologiques en santé publique",
+        "Partenariat R&D en énergie solaire",
+        "Évaluations de l'impact du changement climatique"
+      ],
+      "stat": "18",
+      "stat_label": "Publications de recherche conjointes"
+    },
+    "institutions": {
+      "title": "Partenariats Institutionnels",
+      "description": "Construction de ponts institutionnels durables entre universités, centres de recherche et instituts techniques.",
+      "achievements": [
+        "Partenariats Université de Ouagadougou – IIT",
+        "Échanges de professeurs d'instituts techniques",
+        "Développement conjoint de programmes d'études",
+        "Dons d'équipements de laboratoire"
+      ],
+      "stat": "10",
+      "stat_label": "Partenariats institutionnels"
+    }
+  },
+
+  "social": {
+    "health": {
+      "title": "Initiatives de Santé",
+      "description": "Renforcement du système de santé du Burkina Faso à travers la formation médicale, l'équipement et la coopération pharmaceutique.",
+      "achievements": [
+        "Programmes de fourniture de médicaments génériques",
+        "Formation de professionnels de santé en Inde",
+        "Projets pilotes de télémédecine",
+        "Programmes de santé maternelle et infantile"
+      ],
+      "stat": "50 000+",
+      "stat_label": "Patients bénéficiaires"
+    },
+    "community": {
+      "title": "Développement Communautaire",
+      "description": "Programmes de développement de proximité axés sur l'autonomisation des communautés locales et le renforcement de la résilience.",
+      "achievements": [
+        "Développement de coopératives de femmes",
+        "Centres de formation professionnelle pour les jeunes",
+        "Projets d'accès à l'eau en milieu rural",
+        "Soutien aux institutions de micro-finance"
+      ],
+      "stat": "25",
+      "stat_label": "Programmes communautaires"
+    }
+  },
+
+  "success_stories": {
+    "title": "Histoires de Réussite",
+    "subtitle": "Des exemples concrets de notre coopération bilatérale qui fait une réelle différence dans la vie des populations.",
+    "items": {
+      "irrigation": {
+        "title": "Projet d'Irrigation du Sahel",
+        "impact": "15 000 familles d'agriculteurs ont obtenu un accès à l'irrigation toute l'année"
+      },
+      "it_center": {
+        "title": "Centre d'Excellence IT, Ouagadougou",
+        "impact": "500 jeunes professionnels formés au développement logiciel"
+      },
+      "health_clinic": {
+        "title": "Réseau de Cliniques de Santé Rurales",
+        "impact": "12 cliniques desservant plus de 80 000 patients dans des zones mal desservies"
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Explorez les Opportunités de Partenariat",
+    "subtitle": "Que vous représentiez une entreprise, une institution ou une organisation, nous accueillons les opportunités de renforcer la coopération Inde-Burkina Faso.",
+    "btn_appointment": "Prendre Rendez-vous",
+    "btn_guide": "Télécharger le Guide de Coopération"
+  }
+},
+  "AboutPage":{
+  "sidebar": {
+    "title": "À Propos",
+    "subtitle": "Découvrir l'Ambassade",
+    "nav_label": "Sections de la page"
+  },
+
+  "tabs": {
+    "ambassador": "L'Ambassadeur",
+    "staff": "Le Personnel",
+    "embassy": "L'Ambassade",
+    "network": "Réseau Consulaire",
+    "faq": "FAQ"
+  },
+
+  "ambassador": {
+    "title": "L'Ambassadeur",
+    "photo_alt": "Portrait de S.E. Dr. Désiré Boniface Somé, Ambassadeur du Burkina Faso en Inde",
+    "ambassador_name": "S.E. Dr. Désiré Boniface Somé",
+    "ambassador_title": "Ambassadeur Extraordinaire et Plénipotentiaire",
+    "bio": [
+      "S.E. Dr. Désiré Boniface Somé a pris ses fonctions en tant que Chef de Mission à New Delhi le 29 août 2023. Universitaire distingué et Maître de Conférences en Sociologie à l'Université Joseph Ki-Zerbo, Dr. Somé allie une expertise de haut niveau en recherche à une vision stratégique de la coopération Sud-Sud.",
+      "Sa mission s'articule autour de trois axes stratégiques : le renforcement des partenariats économiques dans les secteurs minier, textile et pharmaceutique ; la facilitation du transfert technologique pour dynamiser l'agriculture et l'industrie du Burkina Faso ; et la promotion des échanges éducatifs et de la formation professionnelle pour la jeunesse burkinabè.",
+      "Outre l'Inde, Dr. Somé supervise les relations diplomatiques avec l'Indonésie, la Thaïlande et le Népal, œuvrant à positionner le Burkina Faso comme un partenaire clé du développement et des échanges culturels dans la région."
+    ],
+    "pillars": {
+      "economic": {
+        "label": "Partenariat Économique",
+        "desc": "Commerce et investissement dans les secteurs minier, textile et pharmaceutique"
+      },
+      "technology": {
+        "label": "Transfert Technologique",
+        "desc": "Adaptation des innovations indiennes pour l'agriculture et l'industrie"
+      },
+      "education": {
+        "label": "Échanges Éducatifs",
+        "desc": "Mobilité académique et formation professionnelle des jeunes"
+      }
+    },
+    "divider_text": "Ambassade du Burkina Faso"
+  },
+
+  "staff": {
+    "title": "Le Personnel de l'Ambassade",
+    "tier_labels": {
+      "leadership": "Direction",
+      "diplomatic": "Personnel Diplomatique",
+      "administrative": "Personnel Administratif",
+      "support": "Personnel d'Appui"
+    },
+    "members": {
+      "bado": { "name": "M. Aimé Yves Bado", "role": "Ministre Conseiller" },
+      "gagre": { "name": "M. Jean-Baptiste Gagré", "role": "Deuxième Conseiller" },
+      "ouedraogo": { "name": "M. Ouédraogo Mahama", "role": "Trésorier" },
+      "coulibaly": { "name": "M. Coulibaly Hervé", "role": "Attaché" },
+      "somadula": { "name": "Mme Somadula Sangeeta", "role": "Secrétaire" },
+      "chander": { "name": "M. Chander Subhash", "role": "Agent de Protocole" },
+      "sanjeev": { "name": "M. Kumar Sanjeev", "role": "Chauffeur" },
+      "kiran": { "name": "M. Biswa Kiran", "role": "Chauffeur" },
+      "rakesh": { "name": "M. Kumar Rakesh", "role": "Chauffeur" },
+      "sukhdev": { "name": "M. Singh Sukhdev", "role": "Chauffeur" }
+    }
+  },
+
+  "embassy": {
+    "title": "L'Ambassade",
+    "desc1": "L'Ambassade du Burkina Faso à New Delhi est la mission diplomatique officielle du Burkina Faso auprès de la République de l'Inde. L'Ambassade constitue le principal canal des relations diplomatiques, consulaires et commerciales entre les deux pays.",
+    "desc2": "L'Ambassade fournit une gamme complète de services consulaires aux ressortissants burkinabè résidant en Inde, en Indonésie, en Thaïlande et au Népal, ou en transit dans ces pays. Les services comprennent le traitement des passeports et visas, la documentation d'état civil et l'assistance d'urgence.",
+    "contact_label": "Coordonnées",
+    "labels": {
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "fax": "Télécopie",
+      "email": "Courriel"
+    },
+    "map_title": "Emplacement de l'Ambassade du Burkina Faso à New Delhi sur Google Maps",
+    "map_caption": "F-2/4, Vasant Vihar, New Delhi — 110057, Inde"
+  },
+
+  "network": {
+    "title": "Réseau Consulaire",
+    "desc": "La juridiction de l'Ambassade comprend trois consulats honoraires : Mumbai (Maharashtra, Inde), Bangkok (Thaïlande) et Jakarta (Indonésie). Les consulats honoraires de Bangkok et de Jakarta disposent de consuls honoraires et sont opérationnels.",
+    "bangkok_title": "Consulat Honoraire — Bangkok",
+    "bangkok_country": "Thaïlande",
+    "jakarta_title": "Consulat Honoraire — Jakarta",
+    "jakarta_country": "Indonésie",
+    "labels": {
+      "address": "Adresse",
+      "consul": "Consul Honoraire",
+      "phone": "Téléphone"
+    }
+  },
+
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Trouvez les réponses aux questions les plus courantes sur les services consulaires et les procédures de l'Ambassade.",
+    "items": {
+      "q1": "Pourquoi dois-je m'inscrire au consulat ?",
+      "a1": [
+        "La grande majorité des Burkinabè qui voyagent à l'étranger ne rencontrent aucune difficulté. Cependant, du fait de nos missions, nous sommes en mesure d'assister les Burkinabè victimes d'actes criminels, d'accidents, de maladies, de décès, de catastrophes naturelles ou d'origine humaine, de troubles civils, ou dont la famille a besoin de les contacter en situation d'urgence.",
+        "Si vous sollicitez un service auprès de l'Ambassade ou du consulat à l'étranger, le personnel vous demandera de fournir une preuve de citoyenneté burkinabè, comme un passeport ou une carte d'identité.",
+        "En enregistrant votre voyage en ligne, vous facilitez les services de localisation en cas d'urgence, la vérification de votre statut et la liaison avec votre famille ou vos proches.",
+        "L'inscription est volontaire et gratuite. Nous vous encourageons à considérer l'enregistrement comme faisant partie intégrante de la planification et de la sécurité de votre voyage."
+      ],
+      "q2": "Comment m'inscrire ?",
+      "a2": [
+        "La Carte Consulaire est une pièce d'identité délivrée par l'Ambassade aux citoyens burkinabè immatriculés dans sa juridiction. Tous les citoyens du Burkina Faso ont le droit de recevoir une carte consulaire.",
+        "Pour obtenir une Carte Consulaire, inscrivez-vous auprès de l'Ambassade sur présentation de tout document prouvant la citoyenneté burkinabè (passeport, carte d'identité, etc.)."
+      ],
+      "q3": "Comment l'Ambassade ou le Consulat peut-il m'aider pendant que je suis à l'étranger ?",
+      "a3": [
+        "Les services consulaires sont fournis aux Burkinabè qui travaillent, vivent et voyagent à l'étranger. Les services consulaires fonctionnent 24 heures sur 24, 7 jours sur 7. Une liste détaillée des services est disponible sur notre page Services Consulaires."
+      ],
+      "q4": "Comment mes informations seront-elles utilisées ?",
+      "a4": [
+        "Le Consulat dans les missions du Burkina Faso à l'étranger utilisera vos informations protégées si nécessaire en cas de catastrophe, d'urgence ou de toute autre crise.",
+        "Seuls les agents autorisés du Consulat ont accès aux informations, qui ne seront utilisées qu'en cas de catastrophe, d'urgence ou autre crise. Cela permet aux responsables autorisés de réagir — par exemple, de contacter la famille pour vérifier le statut des Burkinabè voyageant à l'étranger qui pourraient avoir été touchés par l'urgence."
+      ],
+      "q5": "Inscription et confidentialité ?",
+      "a5": [
+        "Le Consulat s'engage à veiller à ce que toute information personnelle reçue via le processus d'inscription en ligne soit protégée contre toute divulgation non autorisée.",
+        "Le Consulat ne divulguera pas les informations fournies lors du processus d'inscription à des tiers (y compris les membres de votre famille) à moins que vous n'ayez préalablement donné une autorisation écrite. En cas de demande de renseignements de la part de membres de votre famille concernant votre localisation, ces demandes vous seront transmises. Vous pourrez informer le Consulat de votre décision de répondre ou non."
+      ],
+      "q6": "Qu'est-ce qu'un Visa ?",
+      "a6": [
+        "Un citoyen d'un pays étranger souhaitant entrer au Burkina Faso doit généralement obtenir au préalable un visa, qui est apposé dans le passeport du voyageur — un document de voyage délivré par le pays dont le voyageur est ressortissant.",
+        "Certains voyageurs internationaux peuvent être éligibles pour voyager au Burkina Faso sans visa s'ils remplissent les conditions requises. Veuillez consulter notre page Services de Visa pour obtenir tous les détails sur les catégories de visa, les conditions et les frais."
+      ]
+    }
+  }
+},
+"New":{
+  "breadcrumb": "Fil d'Ariane",
+  "home": "Accueil",
+  "news": "Actualités",
+
+  "previous": "Article précédent",
+  "next": "Article suivant",
+  "back_to_news": "Retour à toutes les actualités",
+  "article_navigation": "Navigation des articles",
+
+  "carousel": {
+    "slide": "Diapositive",
+    "pause": "Pause du diaporama",
+    "play": "Reprendre le diaporama"
+  },
+
+  "error": {
+    "title": "Article Introuvable",
+    "message": "L'article que vous recherchez n'existe pas ou a peut-être été supprimé. Veuillez vérifier l'URL ou retourner à la page des actualités."
+  },
+  "retry": "Réessayer"
+},
+  "social": {
+    "Facebook": "Facebook",
+    "Twitter": "Twitter",
+    "LinkedIn": "LinkedIn",
+    "YouTube": "YouTube"
+  }
+}
