@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
-import { isAuthenticated } from '../access/index'
+import { isAuthenticated } from '../access/index.ts'
 import multer from 'multer'
-import { cloudinaryStorage } from './cloudinaryStorage'
+import { cloudinaryStorage } from '../cloudinaryStorage.ts'
 
 const upload = multer({ storage: cloudinaryStorage })
 
