@@ -4,6 +4,8 @@ import path from "path";
 import { buildConfig } from "payload";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
+import { cloudStoragePlugin } from '@payloadcms/plugin-cloud-storage'
+
 
 
 import { Users } from "./collections/Users.ts";
@@ -55,5 +57,17 @@ export default buildConfig({
     },
   }),
   sharp,
-  plugins: [],
+  plugins: [cloudStoragePlugin({
+      collections: {
+        media: {
+          adapter: cloudinaryAdapter,
+
+          disableLocalStorage: true, // Prevent Payload from saving files to disk
+
+          generateFileURL: ({ filename }) => {
+            return cloudinary.url(`media/${filename}`, { secure: true })
+          },
+        },
+      },
+    }),],
 });

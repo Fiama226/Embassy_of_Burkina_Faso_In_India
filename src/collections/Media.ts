@@ -1,31 +1,19 @@
 import type { CollectionConfig } from 'payload'
-import { isAuthenticated } from '../access/index.ts'
-import multer from 'multer'
-import { cloudinaryStorage } from '../cloudinaryStorage.ts'
+import { isAuthenticated } from '../access'
 
-const upload = multer({ storage: cloudinaryStorage })
 
 export const Media: CollectionConfig = {
   slug: 'media',
-
-  labels: {
+   labels: {
     singular: { en: 'Media', fr: 'Média' },
     plural: { en: 'Media', fr: 'Médias' },
   },
-
   access: {
     read: () => true,
     create: isAuthenticated,
     update: isAuthenticated,
     delete: isAuthenticated,
   },
-
-  upload: {
-    disableLocalStorage: true, // 🔴 IMPORTANT
-    mimeTypes: ['image/*'],
-    adminThumbnail: 'thumbnail',
-  },
-
   fields: [
     {
       name: 'alt',
@@ -35,9 +23,32 @@ export const Media: CollectionConfig = {
       admin: {
         description: {
           en: 'Describe this image for accessibility',
-          fr: "Décrivez cette image pour l'accessibilité",
+          fr: 'Décrivez cette image pour l\'accessibilité',
         },
       },
     },
   ],
+   upload: {
+    mimeTypes: ['image/*'],
+    imageSizes: [
+      {
+        name: 'thumbnail',
+        width: 400,
+        height: 300,
+        position: 'centre',
+      },
+      {
+        name: 'card',
+        width: 768,
+        height: 512,
+        position: 'centre',
+      },
+      {
+        name: 'hero',
+        width: 1920,
+        height:undefined
+
 }
+    ],
+    adminThumbnail: 'thumbnail'
+  }}
