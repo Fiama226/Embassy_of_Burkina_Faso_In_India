@@ -18,17 +18,15 @@ import {
   FaMapMarkerAlt,
   FaChevronDown,
   FaGlobe,
+  FaClock,
 } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Header = () => {
-
-
-    const router = useRouter();
+  const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
-
 
   function changeLocale(newLocale: string) {
     const segments = pathname.split("/");
@@ -41,8 +39,18 @@ const Header = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const mobileMenuRef = useRef(null);
+  const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [currentTime, setCurrentTime] = useState("");
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
+  // Helper to check if link is active
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/" || pathname === `/${locale}`;
+    }
+    return pathname === href || pathname?.startsWith(`${href}/`);
+  };
 
 
   /* ---------- Government Links ---------- */
@@ -83,9 +91,34 @@ const Header = () => {
 
   /* ---------- Scroll / Click Outside Effects ---------- */
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+      
+      // Calculate scroll progress
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (window.scrollY / totalHeight) * 100;
+      setScrollProgress(progress);
+    };
+    
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Update local time for New Delhi
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString('en-IN', {
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Asia/Kolkata',
+      });
+      setCurrentTime(timeString);
+    };
+    
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -118,27 +151,44 @@ const Header = () => {
   /* ---------- Render ---------- */
   return (
     <>
+      {/* Scroll Progress Bar */}
+      <div 
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-[#ef2d2d] via-[#fcd116] to-[#009e49] z-[99] transition-all duration-150 ease-out"
+        style={{ width: `${scrollProgress}%` }}
+        aria-hidden="true"
+      />
+
       {/* ===== TOP ANNOUNCEMENT BAR ===== */}
       <div className="bg-[#1e293b] text-white py-2.5 text-sm border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <span className="text-gray-300">{h("topText")}</span>
-          <div className="hidden md:flex items-center gap-4">
-            <FaGlobe className="w-3.5 h-3.5 text-gray-400" />
-   <select
-      value={locale}
-      onChange={(e) => changeLocale(e.target.value)}
-      className="border rounded px-3  text-sm cursor-pointer bg-gray-800 text-white"
-      aria-label="Select language"
-    >
-      <option value="en">English</option>
-      <option value="fr">Français</option>
-    </select>
+          <span className="text-gray-300 hidden sm:inline">{h("topText")}</span>
+          <span className="text-gray-300 sm:hidden">Embassy of Burkina Faso</span>
+          
+          <div className="flex items-center gap-3 sm:gap-4">
+            {/* Live Time Display */}
+            <div className="hidden lg:flex items-center gap-2 text-gray-400 text-xs">
+              <FaClock className="w-3.5 h-3.5" />
+              <span>New Delhi: <span className="text-white font-mono">{currentTime}</span></span>
+            </div>
+            
+            {/* Language Selector - Desktop */}
+            <div className="hidden md:flex items-center gap-2">
+              <FaGlobe className="w-3.5 h-3.5 text-gray-400" />
+              <select
+                value={locale}
+                onChange={(e) => changeLocale(e.target.value)}
+                className="border border-gray-600 rounded px-3 py-1.5 text-sm cursor-pointer bg-gray-800 text-white hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow"
+                aria-label="Select language"
+              >
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Accent Border */}
-      <div className="h-0.5 w-full bg-gradient-to-r from-red via-yellow to-[#009E49]"></div>
 
       {/* ===== MAIN HEADER ===== */}
       <header
@@ -212,42 +262,56 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden xl:flex items-center gap-1">
-              {navigationItems.map((item, index) => (
-                <div key={index} className="relative group">
-                  {item.type === "link" ? (
-                    <Link
-                      href={item.href}
-                      className={`relative px-4 py-2 text-sm font-semibold transition-colors duration-200 ${isScrolled ? "text-gray-700 hover:text-red" : "text-white hover:text-yellow"
+              {navigationItems.map((item, index) => {
+                const active = item.type === 'link' ? isActive(item.href) : false;
+                
+                return (
+                  <div key={index} className="relative group">
+                    {item.type === "link" ? (
+                      <Link
+                        href={item.href}
+                        className={`relative px-4 py-2 text-sm font-semibold transition-colors duration-200 ${
+                          active 
+                            ? 'text-red' 
+                            : isScrolled 
+                              ? "text-gray-700 hover:text-red" 
+                              : "text-white hover:text-yellow"
                         }`}
-                    >
-                      {h(item.key)}
-                      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-3/4"></span>
-                    </Link>
-                  ) : (
-                    <div className="relative">
-                      <button
-                        className={`px-4 py-2 text-sm font-semibold transition-colors duration-200 flex items-center gap-1.5 ${isScrolled ? "text-gray-700 hover:text-red" : "text-white hover:text-yellow"
-                          }`}
                       >
-                        <span>{h(item.key)}</span>
-                        <FaChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" />
-                      </button>
-                      {/* Dropdown Menu */}
-                      <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 mt-2 overflow-hidden border border-gray-100">
-                        {item.items.map((subItem, subIndex) => (
-                          <Link
-                            key={subIndex}
-                            href={subItem.href}
-                            className="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red transition-colors duration-200 border-b border-gray-100 last:border-b-0"
-                          >
-                            {h(subItem.key)}
-                          </Link>
-                        ))}
+                        {h(item.key)}
+                        <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-red transition-all duration-300 ${
+                          active ? 'w-full' : 'w-0 group-hover:w-3/4'
+                        }`}></span>
+                      </Link>
+                    ) : (
+                      <div className="relative">
+                        <button
+                          className={`px-4 py-2 text-sm font-semibold transition-colors duration-200 flex items-center gap-1.5 ${
+                            isScrolled 
+                              ? "text-gray-700 hover:text-red" 
+                              : "text-white hover:text-yellow"
+                          }`}
+                        >
+                          <span>{h(item.key)}</span>
+                          <FaChevronDown className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" />
+                        </button>
+                        {/* Dropdown Menu */}
+                        <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 mt-2 overflow-hidden border border-gray-100 z-50">
+                          {item.items.map((subItem, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              href={subItem.href}
+                              className="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red transition-colors duration-200 border-b border-gray-100 last:border-b-0"
+                            >
+                              {h(subItem.key)}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </div>
-              ))}
+                    )}
+                  </div>
+                );
+              })}
             </nav>
 
             {/* Mobile Menu Button */}
@@ -294,65 +358,93 @@ const Header = () => {
             </div>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-white p-2"
+              className="text-white p-2 hover:bg-gray-800 rounded transition-colors"
               aria-label="Close menu"
             >
               <FaTimes className="w-5 h-5" />
             </button>
+          </div>
+          
+          {/* Language Selector - Mobile */}
+          <div className="mt-4 flex items-center gap-3">
+            <FaGlobe className="w-4 h-4 text-gray-400" />
+            <select
+              value={locale}
+              onChange={(e) => changeLocale(e.target.value)}
+              className="flex-1 bg-gray-800 text-white text-sm rounded px-3 py-2 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow"
+              aria-label="Select language"
+            >
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+            </select>
+          </div>
+          
+          {/* Live Time - Mobile */}
+          <div className="mt-2 flex items-center gap-2 text-gray-400 text-xs">
+            <FaClock className="w-3.5 h-3.5" />
+            <span>New Delhi: <span className="text-white font-mono">{currentTime}</span></span>
           </div>
         </div>
 
         {/* Navigation */}
         <div className="flex flex-col h-full pt-4 pb-6 px-5 overflow-y-auto">
           <nav className="space-y-1 mb-8">
-            {navigationItems.map((item, index) => (
-              <div
-                key={index}
-                className="border-b border-gray-800 last:border-b-0"
-              >
-                {item.type === "link" ? (
-                  <Link
-                    href={item.href}
-                    className="block py-3.5 text-base font-semibold text-white hover:text-yellow transition-colors duration-200"
-                    onClick={handleLinkClick}
-                  >
-                    {h(item.key)}
-                  </Link>
-                ) : (
-                  <div>
-                    <button
-                      onClick={() => toggleDropdown(index)}
-                      className="flex justify-between items-center w-full py-3.5 text-base font-semibold text-white hover:text-yellow transition-colors duration-200"
+            {navigationItems.map((item, index) => {
+              const active = item.type === 'link' ? isActive(item.href) : false;
+              
+              return (
+                <div
+                  key={index}
+                  className="border-b border-gray-800 last:border-b-0"
+                >
+                  {item.type === "link" ? (
+                    <Link
+                      href={item.href}
+                      className={`block py-3.5 text-base font-semibold transition-colors duration-200 ${
+                        active 
+                          ? 'text-yellow border-l-4 border-yellow pl-3' 
+                          : 'text-white hover:text-yellow pl-3'
+                      }`}
+                      onClick={handleLinkClick}
                     >
-                      <span>{h(item.key)}</span>
-                      <FaChevronDown
-                        className={`w-3.5 h-3.5 transition-transform duration-300 ${activeDropdown === index ? "rotate-180" : ""
+                      {h(item.key)}
+                    </Link>
+                  ) : (
+                    <div>
+                      <button
+                        onClick={() => toggleDropdown(index)}
+                        className="flex justify-between items-center w-full py-3.5 text-base font-semibold text-white hover:text-yellow transition-colors duration-200 pl-3"
+                      >
+                        <span>{h(item.key)}</span>
+                        <FaChevronDown
+                          className={`w-3.5 h-3.5 transition-transform duration-300 ${activeDropdown === index ? "rotate-180" : ""
+                            }`}
+                        />
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${activeDropdown === index
+                            ? "max-h-48 opacity-100"
+                            : "max-h-0 opacity-0"
                           }`}
-                      />
-                    </button>
-                    <div
-                      className={`overflow-hidden transition-all duration-300 ${activeDropdown === index
-                          ? "max-h-48 opacity-100"
-                          : "max-h-0 opacity-0"
-                        }`}
-                    >
-                      <div className="pb-3 pl-4 space-y-2">
-                        {item.items.map((subItem, subIndex) => (
-                          <Link
-                            key={subIndex}
-                            href={subItem.href}
-                            className="block py-2 text-sm text-gray-400 hover:text-yellow transition-colors duration-200"
-                            onClick={handleLinkClick}
-                          >
-                            {h(subItem.key)}
-                          </Link>
-                        ))}
+                      >
+                        <div className="pb-3 pl-4 space-y-2">
+                          {item.items.map((subItem, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              href={subItem.href}
+                              className="block py-2 text-sm text-gray-400 hover:text-yellow transition-colors duration-200"
+                              onClick={handleLinkClick}
+                            >
+                              {h(subItem.key)}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </nav>
 
           {/* Quick Actions */}

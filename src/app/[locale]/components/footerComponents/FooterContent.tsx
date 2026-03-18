@@ -38,16 +38,12 @@ export function FooterContent({
   translations: t,
 }: FooterContentProps) {
   return (
-    <footer 
-      className="bg-[#0f172a]  text-gray-300 font-sans relative"
+    <footer
+      className="bg-[#0f172a] text-gray-300 font-sans relative mt-auto"
       role="contentinfo"
       aria-label="Site footer"
     >
       {/* Top Border Accent - Burkina Faso Flag Colors */}
-      <div 
-        className="h-1 w-full bg-gradient-to-r from-burkina-red via-burkina-yellow to-burkina-green"
-        aria-hidden="true"
-      />
 
       {/* Emergency Banner */}
       <section 
@@ -173,11 +169,7 @@ export function FooterContent({
             </h2>
 
             
-            {/* Hidden text for screen readers 
-            <p id="external-link-hint" className="sr-only">
-              {t.opensInNewTab}
-            </p>
-            */}
+
             
             <ul className="space-y-3" role="list">
               {governmentLinks.map((link, index) => (
