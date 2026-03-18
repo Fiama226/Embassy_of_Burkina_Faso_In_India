@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Host
+Host: https://ambassadeburkinafasoindia.com
+
+# Sitemaps
+Sitemap: https://ambassadeburkinafasoindia.com/sitemap.xml

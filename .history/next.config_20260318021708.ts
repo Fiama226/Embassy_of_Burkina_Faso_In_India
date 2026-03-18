@@ -1,6 +1,7 @@
 import { withPayload } from "@payloadcms/next/withPayload";
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import path from "path";
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -17,6 +18,13 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
   compress: true,
+  // Fix Turbopack workspace root detection
+  experimental: {
+    ...nextConfig.experimental,
+    turbo: {
+      root: path.resolve(__dirname),
+    },
+  },
 };
 
 export default withPayload(withNextIntl(nextConfig));

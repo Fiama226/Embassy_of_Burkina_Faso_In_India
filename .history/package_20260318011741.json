@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "knip": "knip",
-    "postbuild": "next-sitemap --config next-sitemap.config.cjs"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@mantine/core": "^8.3.12",

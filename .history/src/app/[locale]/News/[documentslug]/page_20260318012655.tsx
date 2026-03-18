@@ -119,8 +119,8 @@ export default async function NewsArticlePage({
     // then consider moving absolute URL generation to client or handling statically.
     // For runtime, this is valid.
     const [articleRes, adjacentRes] = await Promise.all([
-      fetch(`${baseUrl}/api/new/${documentslug}?locale=${locale}`, { cache: "no-store" }),
-      fetch(`${baseUrl}/api/getAdjacentArticles/${documentslug}?locale=${locale}`, { cache: "no-store" }),
+      fetch(`${baseUrl}/api/new/${resolvedParams.documentslug}?locale=${resolvedParams.locale}`, { cache: "no-store" }),
+      fetch(`${baseUrl}/api/getAdjacentArticles/${resolvedParams.documentslug}?locale=${resolvedParams.locale}`, { cache: "no-store" }),
     ]);
 
     if (articleRes.ok) {

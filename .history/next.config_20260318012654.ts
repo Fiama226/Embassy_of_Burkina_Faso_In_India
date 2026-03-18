@@ -18,5 +18,6 @@ const nextConfig: NextConfig = {
   },
   compress: true,
 };
+};
 
 export default withPayload(withNextIntl(nextConfig));

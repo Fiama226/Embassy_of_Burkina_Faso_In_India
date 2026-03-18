@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
   compress: true,
+  swcMinify: true,
 };
 
 export default withPayload(withNextIntl(nextConfig));
